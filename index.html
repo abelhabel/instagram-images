@@ -13,20 +13,36 @@
     position: relative;
     width: 640px;
     height: 480px;
-    top: 50%;
-    transform: translateY(-50%);
     margin: auto;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
     background-repeat: no-repeat;
     background-size: auto;
+  }
+  .meta_text {
+    position: relative;
+    width: 640px;
+    margin: auto;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border-bottom: 1px solid green;
+  }
+  #likes {
+    font-size: 18px;
+    color: white;
+    max-width: 15%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  a {
+    color: white;
+    text-decoration: none;
   }
   </style>
 </head>
 <body>
-  <div id="img_container"></div>
+  <div id="img_container">
+    <div id="likes"></div>
+  </div>
+  <div id="caption" class="meta_text"></div>
+  <div class="meta_text"><a id="link" href=""></a></div>
 </body>
 <script src="fetch-api.js"></script>
 </html>
